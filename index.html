@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="chart1"></div>
+
+    <script src="d3.js"></script>
+    <script src="fisheye.js"></script>
+
+    <style>
+        #chart1 {
+          width: 960px;
+          height: 500px;
+          border: solid 1px #ccc;
+        }
+
+        text {
+          font: 10px sans-serif;
+        }
+
+        .background {
+          fill: none;
+          pointer-events: all;
+        }
+
+        #chart1 .node {
+          stroke: #fff;
+          stroke-width: 1.5px;
+        }
+
+        #chart1 .link {
+          stroke: #999;
+          stroke-opacity: .6;
+          stroke-width: 1.5px;
+        }
+
+        .axis path, .axis line {
+          fill: none;
+          stroke: #fff;
+          shape-rendering: crispEdges;
+        }
+
+        .edge-label {
+            display: none;
+        }
+
+        body.edge-labels-visible .edge-label {
+            display: inherit;
+        }
+    </style>
+
+    <label><input type="checkbox" id="edge-labels-checkbox"> Show edge labels</label>
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
